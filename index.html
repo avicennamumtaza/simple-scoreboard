@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="w-full d-flex justify-content-center my-4">
+        <div class="card w-25 text-center">
+            <img src="5 ping pong images.png" class="card-img-top" alt="ping pong">
+            <div class="card-body">
+                <h2 class="card-title text-uppercase"><b>Score Board</b></h2>
+                <div class="d-flex mt-3 justify-content-between px-3">
+                    <h3 id="b">0</h3>
+                    <h3 id="">vs</h3>
+                    <h3 id="r">0</h3>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h4 class="">Blue</h4>
+                    <div class="dropdown">
+                        <button id="maxscore" class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Max Score
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" value="10" href="#">10</a></li>
+                            <li><a class="dropdown-item" value="15" href="#">15</a></li>
+                            <li><a class="dropdown-item" value="20" href="#">20</a></li>
+                        </ul>
+                    </div>
+                    <h4 class="">Red</h4>
+                </div>
+                <div class="d-flex mt-2 justify-content-between">
+                    <a id="bplus" href="#" class="btn btn-primary">+1</a>
+                    <a id="finish" href="#" class="btn btn-success">Finish / Reset</a>
+                    <a id="rplus" href="#" class="btn btn-danger">+1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
