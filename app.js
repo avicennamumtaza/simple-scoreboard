@@ -32,8 +32,18 @@ function plusClick(button) {
                 alert('The game is finish');
             } else if (button.id == 'bplus') {
                 plusScore(blueScore);
+                if (parseInt(blueScore.innerText) == selectedValue) {
+                    // console.log('tttttttttttttttttttttttt')
+                    blueScore.style.color = 'green'
+                    redScore.style.color = 'red'
+                }
             } else if (button.id == 'rplus') {
                 plusScore(redScore);
+                if (parseInt(redScore.innerText) == selectedValue) {
+                    // console.log('tttttttttttttttttttttttt')
+                    redScore.style.color = 'green'
+                    blueScore.style.color = 'red'
+                }
             }
         }
     })
